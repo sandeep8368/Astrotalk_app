@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Apply styles to the whole page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container styling */
+div {
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(20, 20, 20, 0.9);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    max-width: 600px;
+    width: 90%;
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    transition: 0.3s ease-in-out;
+}
+
+/* Heading styles with neon glow */
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Neon glow for H1 */
+h1 {
+    color: #ff007f;
+    font-size: 28px;
+    text-shadow: 0px 0px 10px #ff007f, 0px 0px 20px #ff007f;
+}
+
+/* Neon glow for H2 */
+h2 {
+    color: #00ffff;
+    font-size: 24px;
+    text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+}
+
+/* Neon glow for H3 */
+h3 {
+    color: #ffcc00;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 0px 0px 10px #ffcc00, 0px 0px 20px #ffcc00;
+}
+
+/* Hover effect */
+div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello Guyssss Good {{wish}}.</h1>
+        <h2>Welcome to Astortalk.</h2>
+        <h3>The current time and date is :- {{time}}</h3>
+        <h1>Astro Info for candidate {{candidate}} : {{msg}} </h1>
+        <h2>Very soon U are going to date with {{name}}</h2>
+    </div>
+    
+</body>
+</html>
